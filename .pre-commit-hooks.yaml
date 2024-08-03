@@ -26,7 +26,8 @@
   entry: cargo test
   language: system
   types: [rust]
-  args: ["--all-targets", "--", "--nocapture", "--test-threads=1", "--test"]
+  args: ["--all-targets"]
+  pass_filenames: false
 - id: build
   name: build
   description: Build using cargo build
